@@ -8,7 +8,7 @@
 </head>
 <body>
 
-<nav  id="navbar" class="container-xl navbar navbar-expand bg-dark navbar-dark sticky-top ">
+<nav  id="navbar" class="container-fluid navbar navbar-expand bg-dark navbar-dark sticky-top ">
     <div class="container-fluid">
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
             <span class="navbar-toggler-icon"></span>
@@ -16,17 +16,17 @@
         <div class="collapse navbar-collapse" id="collapsibleNavbar">
             <ul id="navbarChan" class="navbar-nav nav-pills justify-content-center ">
                 <li class="nav-item">
-                    <a class="nav-link" href="#">
+                    <a class="nav-link" href="#SigmaAboutMe">
                         Elijah W
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">
+                    <a class="nav-link" href="#SigmaSkills">
                         Skills
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">
+                    <a class="nav-link" href="#SigmaProjects">
                         Projects
                     </a>
                 </li>
@@ -35,57 +35,74 @@
 
     </div>
 </nav>
-<!-- make this section responsive -->
-<div class="d-flex mx-auto flex-column container-xl" style="width:fit-content">
-    <h1 class="text-center text-success">Some Things About Me:</h1>
-    <div class="row bg-secondary" >
-        <div class="col-sm-1"></div>
-        <img src="images/workHard.png" alt="about-me1" class="img-fluid col-sm-3">
-        <img src="images/music.png" alt="about-me2" class="img-fluid col-sm-3">
-        <img src="images/music.png" alt="about-me3" class="img-fluid col-sm-3">
-        <div class="col-sm-1"></div>
+
+<div class="d-flex mx-auto flex-column container-fluid bg-dark text-white" style="width:fit-content">
+
+    <div id="SigmaAboutMe" class="bg-secondary">
+
+        <h1 class="text-center">Some Things About Me:  </h1>
+
+            <div class="row">
+                <div class="justify-content-center col-xl-1 col-lg-1 col-md-1 col-sm-2"></div>
+                    <img id="about-me1"src="images/workHard.png" alt="about-me1" class="img-fluid col-xl-3 col-lg-3 col-md-3 col-sm-4">
+                    <img id="about-me2" src="images/music.png" alt="about-me2" class="img-fluid col-xl-3 col-lg-3 col-md-3 col-sm-4">
+                    <img id="about-me3" src="images/music.png" alt="about-me3" class="img-fluid col-xl-3 col-lg-3 col-md-3 col-sm-4">
+                <div class="col-xl-1 col-lg-1 col-md-1 col-sm-2"></div>
+            </div>
+        <pre></pre>
     </div>
-    <div id="SigmaSkills" class="bg-light text-center">
+    <pre></pre>
+    <div id="SigmaSkills" class="text-center bg-success">
         <!-- create and change image links to be of: Java, HTML, Javascript, CSS, Bootstrap, etc -->
         <h1>Currently, I have gained programming knowledge on: </h1>
-        <div class="row" >
-            <div class="col-sm-1"></div>
-            <img src="../images/nah_id_win.jpg" alt="java" class="img-fluid col-sm-4">
-            <img src="../images/arrow.png" alt="arrow" class="img-fluid col-sm-2">
-            <img src="../images/ded-gojo.jpg" alt="gojover" class="img-fluid col-sm-4">
-            <div class="col-sm-1"></div>
+        <div class="row">
+            <div class="col-xl-1 col-lg-2 col-md-3 col-sm-4"></div>
+            <img id="id-java" src="images/java.png" alt="java" class="img-fluid col-xl-2 col-lg-4 col-md-5 col-sm-6">
+            <img id="id-html" src="images/html.png" alt="html" class="img-fluid col-xl-2 col-lg-4 col-md-5 col-sm-6">
+            <img id="id-js" src="images/javascript.png" alt="js" class="img-fluid col-xl-2 col-lg-4 col-md-5 col-sm-6">
+            <img id="id-css" src="images/css.png" alt="css" class="img-fluid col-xl-2 col-lg-4 col-md-5 col-sm-6">
+            <img id="id-bootstrap" src="images/bootstrap.png" alt="bootstrap" class="img-fluid col-xl-2 col-lg-4 col-md-5 col-sm-6">
         </div>
+        <pre></pre>
     </div>
+    <pre></pre>
     <div id="SigmaProjects" class="bg-light text-center">
-        <h1 class="text-danger">An example of some projects that I have created are: </h1>
+        <h1 class="text-danger display">An example of some projects that I have created are: </h1>
         <ul>
             <li>
-                <a class="display-6" href="https://github.com/thewrightmeme/Stacks-And-Queues">A Stacks and Queues Program</a>
+                <a class="display-5" href="https://github.com/thewrightmeme/Stacks-And-Queues">---A Stacks and Queues Program---</a>
+                <p class="text-success display-6">We created a bathroom line and a truck fleet! </p>
             </li>
             <li>
-                <a class="display-6" href="https://github.com/thewrightmeme/Recursive-Sorts">A Recursive Sort Program</a>
+                <a class="display-5" href="https://github.com/thewrightmeme/Recursive-Sorts">---A Recursive Sort Program---</a>
+                <p class="text-success display-6">We created merge sort and quick sort methods! </p>
             </li>
             <li>
-                <a class="display-6" href="https://mr-goldstein-s-computer-science-classes.github.io/deli-project-thewrightmeme/">A Deli Website</a>
+                <a class="display-5" href="https://mr-goldstein-s-computer-science-classes.github.io/deli-project-thewrightmeme/">---A Deli Website---</a>
+                <p class="text-success display-6">We created a fake deli website! </p>
             </li>
             <li>
-                <a class="display-6" href="https://github.com/thewrightmeme/Sorts-">A Normal Sort Program</a>
+                <a class="display-5" href="https://github.com/thewrightmeme/Sorts-">---A Normal Sort Program---</a>
+                <p class="text-success display-6">We created bubble sort, selection sort, and bubble sort methods!</p>
             </li>
             <li>
-                <a class="display-6" href="https://github.com/thewrightmeme/LinkedList-">A Linked List Program</a>
+                <a class="display-5" href="https://github.com/thewrightmeme/LinkedList-">---A Linked List Program---</a>
+                <p class="text-success display-6">We created methods for creating a functioning linked list!</p>
             </li>
             <li>
-                <a class="display-6" href="https://github.com/thewrightmeme/ArrayList">A Array List Program</a>
+                <a class="display-5" href="https://github.com/thewrightmeme/ArrayList">---A Array List Program---</a>
+                <p class="text-success display-6">We created methods for creating a functioning array list! </p>
             </li>
             <li>
-                <a class="display-6" href="https://thewrightmeme.github.io/Website-Practice/">Practice Website</a>
+                <a class="display-5" href="https://thewrightmeme.github.io/Website-Practice/">---Practice Website---</a>
+                <p class="text-success display-6">We made this to practice things in HTML and CSS (like BUTTONS)!</p>
             </li>
 
         </ul>
     </div>
 
 </div>
-
+<!-- add animations-->
 
 </body>
 </html>
