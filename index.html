@@ -44,9 +44,9 @@
 
             <div class="row">
                 <div class="justify-content-center col-xl-1 col-lg-1 col-md-1 col-sm-2"></div>
-                    <img id="about-me1"src="images/workHard.png" alt="about-me1" class="img-fluid col-xl-3 col-lg-3 col-md-3 col-sm-4">
+                    <img id="about-me1" src="images/workHard.png" alt="about-me1" class="img-fluid col-xl-3 col-lg-3 col-md-3 col-sm-4">
                     <img id="about-me2" src="images/music.png" alt="about-me2" class="img-fluid col-xl-3 col-lg-3 col-md-3 col-sm-4">
-                    <img id="about-me3" src="images/music.png" alt="about-me3" class="img-fluid col-xl-3 col-lg-3 col-md-3 col-sm-4">
+                    <img id="about-me3" src="images/animation.png" alt="about-me3" class="img-fluid col-xl-3 col-lg-3 col-md-3 col-sm-4">
                 <div class="col-xl-1 col-lg-1 col-md-1 col-sm-2"></div>
             </div>
         <pre></pre>
@@ -71,35 +71,51 @@
         <ul>
             <li>
                 <a class="display-5" href="https://github.com/thewrightmeme/Stacks-And-Queues">---A Stacks and Queues Program---</a>
-                <p class="text-success display-6">We created a bathroom line and a truck fleet! </p>
+                <p class="text-success display-6">We created a bathroom line and a truck fleet! We had to create code that operated like a stack or a queue. It was a bit difficult to code however, since we had to make it work with the logic of an actual bathroom line and truck fleet company. </p>
             </li>
             <li>
                 <a class="display-5" href="https://github.com/thewrightmeme/Recursive-Sorts">---A Recursive Sort Program---</a>
-                <p class="text-success display-6">We created merge sort and quick sort methods! </p>
+                <p class="text-success display-6">We created merge sort and quick sort methods! The merge sort method divides, conquers, and merges elements into order. The quick sort method selects a pivot, partitions, and recursively sorts elements into order.</p>
             </li>
             <li>
                 <a class="display-5" href="https://mr-goldstein-s-computer-science-classes.github.io/deli-project-thewrightmeme/">---A Deli Website---</a>
-                <p class="text-success display-6">We created a fake deli website! </p>
+                <p class="text-success display-6">We created a fake deli website! You can order 2 pre-built sandwiches. You can also make a sandwich from scratch.</p>
             </li>
             <li>
                 <a class="display-5" href="https://github.com/thewrightmeme/Sorts-">---A Normal Sort Program---</a>
-                <p class="text-success display-6">We created bubble sort, selection sort, and bubble sort methods!</p>
+                <p class="text-success display-6">We created bubble sort, selection sort, and insertion sort methods! The hardest sort to make was bubble sort. The easiest one to make was insertion sort.</p>
             </li>
             <li>
                 <a class="display-5" href="https://github.com/thewrightmeme/LinkedList-">---A Linked List Program---</a>
-                <p class="text-success display-6">We created methods for creating a functioning linked list!</p>
+                <p class="text-success display-6">We created methods for creating a functioning linked list! Making a method that adds elements the list was really difficult. A linked list organizes data with nodes containing values and references.  </p>
             </li>
             <li>
                 <a class="display-5" href="https://github.com/thewrightmeme/ArrayList">---A Array List Program---</a>
-                <p class="text-success display-6">We created methods for creating a functioning array list! </p>
+                <p class="text-success display-6">We created methods for creating a functioning array list! It was the first program that I had made in 10th grade. It was extra difficult since I had sort of forgotten all of my coding knowledge.</p>
             </li>
             <li>
                 <a class="display-5" href="https://thewrightmeme.github.io/Website-Practice/">---Practice Website---</a>
-                <p class="text-success display-6">We made this to practice things in HTML and CSS (like BUTTONS)!</p>
+                <p class="text-success display-6">We made this to practice things in HTML and CSS (like BUTTONS)! It was very fun! It allowed me to express my creativity.</p>
             </li>
 
         </ul>
     </div>
+    <button onclick="typeWriter()">Click me for a nice and warm thank you!</button>
+    <p id="demo"></p>
+    <script>
+        var i = 0;
+        var txt = 'THANK YOU FOR READING THANK YOU FOR READING THANK YOU FOR READING THANK YOU FOR READING THANK YOU FOR READING THANK YOU FOR READING THANK YOU FOR READING THANK YOU FOR READING THANK YOU FOR READING THANK YOU FOR READING THANK YOU FOR READING THANK YOU FOR READING THANK YOU FOR READING THANK YOU FOR READING THANK YOU FOR READING THANK YOU FOR READING THANK YOU FOR READING THANK YOU FOR READING THANK YOU FOR READING THANK YOU FOR READING THANK YOU FOR READING THANK YOU FOR READING THANK YOU FOR READING THANK YOU FOR READING THANK YOU FOR READING THANK YOU FOR READING THANK YOU FOR READING THANK YOU FOR READING THANK YOU FOR READING THANK YOU FOR READING THANK YOU FOR READING THANK YOU FOR READING THANK YOU FOR READING THANK YOU FOR READING THANK YOU FOR READING THANK YOU FOR READING THANK YOU FOR READING THANK YOU FOR READING THANK YOU FOR READING THANK YOU FOR READING THANK YOU FOR READING THANK YOU FOR READING THANK YOU FOR READING THANK YOU FOR READING THANK YOU FOR READING THANK YOU FOR READING THANK YOU FOR READING THANK YOU FOR READING THANK YOU FOR READING THANK YOU FOR READING THANK YOU FOR READING THANK YOU FOR READING THANK YOU FOR READING THANK YOU FOR READING THANK YOU FOR READING THANK YOU FOR READING THANK YOU FOR READING THANK YOU FOR READING THANK YOU FOR READING THANK YOU FOR READING THANK YOU FOR READING THANK YOU FOR READING THANK YOU FOR READING THANK YOU FOR READING THANK YOU FOR READING THANK YOU FOR READING THANK YOU FOR READING THANK YOU FOR READING THANK YOU FOR READING THANK YOU FOR READING THANK YOU FOR READING THANK YOU FOR READING THANK YOU FOR READING THANK YOU FOR READING THANK YOU FOR READING THANK YOU FOR READING THANK YOU FOR READING THANK YOU FOR READING THANK YOU FOR READING THANK YOU FOR READING THANK YOU FOR READING THANK YOU FOR READING THANK YOU FOR READING THANK YOU FOR READING THANK YOU FOR READING THANK YOU FOR READING THANK YOU FOR READING THANK YOU FOR READING THANK YOU FOR READING THANK YOU FOR READING THANK YOU FOR READING THANK YOU FOR READING THANK YOU FOR READING THANK YOU FOR READING THANK YOU FOR READING ';
+        var speed = 50;
+
+        function typeWriter() {
+            if (i < txt.length) {
+                document.getElementById("demo").innerHTML += txt.charAt(i);
+                i++;
+                setTimeout(typeWriter, speed);
+            }
+        }
+    </script>
+
 
 </div>
 <!-- add animations-->
